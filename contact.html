@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+
+  <title>Contact — Core Advisors</title>
+  <meta name="description" content="Book a strategy call or send a message to Core Advisors.">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="CoreAdvisors Home">
+        <img class="brand-logo" src="assets/logo.png" alt="Core Advisors logo" />
+        <div class="brand-text">
+          <span class="brand-name">CORE ADVISORS</span>
+          <span class="brand-tagline">Automate. Optimize. Thrive.</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="services.html">Services</a>
+        <a href="industries.html">Industries</a>
+        <a href="pricing.html">Packages</a>
+        <a href="about.html">About</a>
+        <a class="btn btn-primary nav-cta" href="contact.html">Book a Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s build your growth system.</h1>
+        <p class="lead muted">
+          Tell us what you do and what you want to improve. We’ll reply with a clear next step.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="card">
+            <h2>Send a message</h2>
+            <form class="form" id="contactForm">
+              <label>
+                Name
+                <input required type="text" name="name" placeholder="Your name" />
+              </label>
+
+              <label>
+                Email
+                <input required type="email" name="email" placeholder="you@company.com" />
+              </label>
+
+              <label>
+                Business type
+                <select name="type" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Real estate</option>
+                  <option>Accounting</option>
+                  <option>Retail / LCBO outlet</option>
+                  <option>Restaurant</option>
+                  <option>Other</option>
+                </select>
+              </label>
+
+              <label>
+                What do you need help with?
+                <textarea required name="message" rows="6"
+                  placeholder="Ads, content, listings, POS insights, automation, reporting..."></textarea>
+              </label>
+
+              <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <h2>Book a call</h2>
+            <p class="muted">
+              If you already know what you want, book a call and we’ll map a plan quickly.
+            </p>
+            <div class="info-box">
+              <div class="info-row"><span class="label">Email</span><span>hello@coreadvisors.ca</span></div>
+              <div class="info-row"><span class="label">Location</span><span>Canada (remote friendly)</span></div>
+              <div class="info-row"><span class="label">Specialties</span><span>Ads • Content • Automation • POS
+                  insights</span></div>
+            </div>
+
+            <div class="note-box mt-24">
+              <h3>Tip</h3>
+              <p class="muted">
+                Please describe your business and needs in as much detail as you can. This helps us prepare and ensures
+                you get the most out of our conversation.
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Core Advisors logo" />
+          <div>
+            <div class="footer-title">CoreAdvisors.ca</div>
+            <div class="footer-sub">Automate. Optimize. Thrive.</div>
+          </div>
+        </div>
+        <p class="muted">
+          Done-for-you growth marketing + operational automation for real estate agents, accounting firms, and
+          retail/restaurant operators.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer-heading">Pages</div>
+        <a href="services.html">Services</a><br />
+        <a href="industries.html">Industries</a><br />
+        <a href="pricing.html">Packages</a><br />
+        <a href="about.html">About</a><br />
+        <a href="contact.html">Book a Call</a>
+      </div>
+
+      <div>
+        <div class="footer-heading">Services</div>
+        <div class="muted small">Real Estate Growth Suite</div>
+        <div class="muted small">Accounting Growth Suite</div>
+        <div class="muted small">Retail + Restaurant Automation</div>
+      </div>
+
+      <div>
+        <div class="footer-heading">Contact</div>
+        <div class="muted small">Email: hello@coreadvisors.ca</div>
+        <div class="muted small">Based in Canada • Remote friendly</div>
+        <div class="footer-badges">
+          <span class="badge">Meta Ads</span>
+          <span class="badge">Automation</span>
+          <span class="badge">POS Insights</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="muted small">© <span id="year"></span> CoreAdvisors.ca • All rights reserved.</div>
+      <div class="muted small">Built to be fast, clean, and conversion-focused.</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
